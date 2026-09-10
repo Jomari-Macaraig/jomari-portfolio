@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  --font-geist-sans: "Geist", sans-serif;
+  --font-geist-mono: "Geist Mono", monospace;
+  --font-syne: "Syne", sans-serif;
+}
+
+@theme {
+  --color-bg: #070708;
+  --color-bg-elevetad: #101012;
+  --color-bg-soft: #16161a;
+  --color-fg: #f3f0e8;
+  --color-muted: #9a9588;
+  --color-accent: #d4ff3a;
+  --color-accent-ink: #111;
+  --color-line: #f3f0e81a;
+  --font-sans: var(--font-geist-sans);
+  --font-display: var(--font-syne);
+  --font-mono: var(--font-geist-mono);
+}
