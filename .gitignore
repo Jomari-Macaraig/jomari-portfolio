@@ -36,5 +36,8 @@ lerna-debug.log*
 .DS_Store
 *.pem
 
+# firebase
+.firebase/
+
 # generated learning notes (from /tailwind-lesson) — not part of the site
 /docs/lessons/
