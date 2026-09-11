@@ -13,6 +13,7 @@
   --color-fg: #f3f0e8;
   --color-muted: #9a9588;
   --color-accent: #d4ff3a;
+  --color-accent-light: color-mix(in oklch, var(--color-accent) 100%, white 35%);
   --color-accent-ink: #111;
   --color-line: #f3f0e81a;
   --font-sans: var(--font-geist-sans);
