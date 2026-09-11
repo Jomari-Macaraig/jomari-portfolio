@@ -4,7 +4,7 @@ import HomeButton from "../HomeButton";
 
 export default function Header() {
   return (
-    <header className="flex items-center px-50 py-5 z-10">
+    <header className="sticky flex top-0 z-20 items-center px-50 py-5 bg-bg/75">
       <div className="basis-1/8">
         <HomeButton />
       </div>
