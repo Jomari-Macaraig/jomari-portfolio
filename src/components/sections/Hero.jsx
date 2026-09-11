@@ -5,7 +5,7 @@ import Link from "../ui/Link";
 
 export default function Hero() {
   return (
-    <section id="#" className="relative z-10 min-h-[1000vh] pt-24 px-40 text-muted ">
+    <section id="hero" className="relative z-10 min-h-[1000vh] pt-24 px-40 text-muted ">
       <div className="flex items-center justify-between font-mono font-extralight text-sm tracking-xl uppercase">
         <div>REMOTE · PYTHON · REACT · AWS · AI</div>
         <div className="text-accent tracking-widest">OPEN TO REMOTE · PART-TIME OR FULL-TIME</div>
