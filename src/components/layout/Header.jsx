@@ -4,14 +4,14 @@ import HomeButton from "../HomeButton";
 
 export default function Header() {
   return (
-    <header className="sticky flex top-0 z-20 items-center px-50 py-5 bg-bg/75">
-      <div className="basis-1/8">
+    <header className="sticky top-0 z-20 grid grid-cols-[auto_1fr_auto] items-center gap-4 py-5 px-5 sm:px-10 md:px-20 lg:px-40">
+      <div>
         <HomeButton />
       </div>
-      <div className="basis-6/8">
+      <div className="hidden lg:block">
         <Navigation />
       </div>
-      <div className="basis-1/8 text-right">
+      <div className="justify-self-end hidden lg:block">
         <Email title="Email" />
       </div>
     </header>

@@ -1,6 +1,7 @@
 import NavigationItem from "./NavigationItem";
 import { NAVIGATION_ITEMS } from "../data/site";
 
+
 export default function Navigation() {
   return (
     <nav className="flex items-center justify-center">

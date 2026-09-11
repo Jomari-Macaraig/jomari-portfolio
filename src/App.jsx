@@ -8,8 +8,10 @@ function App() {
       <div className="grid-overlay" aria-hidden />
       <div className="ambient" aria-hidden />
       <div className="ambient ambient-2" aria-hidden />
-      <Header />
-      <Main />
+      <div className="flex min-h-dvh flex-col">
+        <Header />
+        <Main />
+      </div>
     </>
   );
 }
