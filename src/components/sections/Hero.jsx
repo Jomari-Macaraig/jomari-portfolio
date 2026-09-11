@@ -24,9 +24,13 @@ export default function Hero() {
           <p className="font-mono font-light text-sm uppercase">CURRENTLY · {SITE.job}</p>
         </div>
         <div className="flex flex-col md:flex-row gap-4 flex-wrap justify-end items-center sm:self-end">
-          <Email title="Start a conversation" className="w-full md:w-auto text-center text-xs" />
-          <CTA title="View Work" link="#work" className="w-full md:w-auto text-center text-xs" />
-          <Link title="Linkedin" link={SITE.linkedin} className="w-full md:w-auto justify-center text-center text-xs" />
+          <Email title="Start a conversation" className="w-full md:w-auto text-center text-xs md:text-sm" />
+          <CTA title="View Work" link="#work" className="w-full md:w-auto text-center text-xs md:text-sm" />
+          <Link
+            title="Linkedin"
+            link={SITE.linkedin}
+            className="w-full md:w-auto justify-center text-center text-xs md:text-sm"
+          />
         </div>
       </div>
     </section>
