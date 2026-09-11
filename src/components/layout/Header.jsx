@@ -12,7 +12,7 @@ export default function Header() {
         <Navigation />
       </div>
       <div className="basis-1/8 text-right">
-        <Email />
+        <Email title="Email" />
       </div>
     </header>
   );
