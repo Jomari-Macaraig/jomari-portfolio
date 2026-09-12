@@ -3,7 +3,7 @@ import ParagraphAccent from "./ParagraphAccent";
 
 export default function Job({ date, company, jobTitle, description, place, isCurrent, className = "" }) {
   return (
-    <div className={`flex flex-col sm:flex-row gap-2 py-5 ${className}`}>
+    <div className={`flex flex-col sm:flex-row gap-2 py-5 hover:bg-bg-elevetad focus-visible::bg-bg-elevetad ${className}`}>
       <div className="flex flex-col flex-1 flex gap-3 p-3">
         <ParagraphAccent className="uppercase tracking-widest">{date}</ParagraphAccent>
         <span className="uppercase font-mono text-xs tracking-widest font-thin">{isCurrent && "NOW"}</span>

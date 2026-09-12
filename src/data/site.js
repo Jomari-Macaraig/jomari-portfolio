@@ -1,6 +1,7 @@
 export const SITE = {
   name: "Jomari Macaraig",
-  email: "mailto:macaraig.jomari10@gmail.com",
+  email: "macaraig.jomari10@gmail.com",
+  mailto: "mailto:macaraig.jomari10@gmail.com",
   description:
     "Software engineer with over a decade of experience building reliable digital products and solving complex business problems.",
   job: "Freelance",
@@ -128,7 +129,7 @@ export const SITE = {
         jobTitle: "Software Engineer",
         description:
           "Designed scalable applications and APIs while helping engineering teams improve performance and delivery standards.",
-        place: "UNITED STATES",
+        place: "UNITED STATES/CANADA",
         isCurrent: false,
       },
       {
@@ -160,6 +161,40 @@ export const SITE = {
       },
     ],
   },
+  projects: {
+    section: ["05", "Things I've built"],
+    title: ["Personal projects where I explore ideas, solve practical problems, and build across the stack."],
+    description:
+      "Much of the work I have built for companies is confidential or proprietary, so this space focuses on personal projects where I can openly share the process, technical decisions, and results.",
+    items: [
+      {
+        index: "01",
+        title: "Personal Website",
+        description:
+          "A personal website designed and built to showcase my experience, capabilities, and projects while reflecting how I approach product development across the stack.",
+        stacks: ["React", "TailwindCSS", "Framer Motion"],
+        github: "https://github.com/Jomari-Macaraig/jomari-portfolio",
+      },
+      {
+        index: "02",
+        title: "Coming Soon...",
+        description: "",
+        stacks: [],
+        github: "",
+      },
+      {
+        index: "03",
+        title: "Coming Soon...",
+        description: "",
+        stacks: [],
+        github: "",
+      },
+    ],
+  },
+  contact: {
+    section: ["05", "Contact"],
+    title: ["If the work is complex, remote, and needs someone who will own it, let’s talk."],
+  },
 };
 
 export const NAVIGATION_ITEMS = [
@@ -167,5 +202,5 @@ export const NAVIGATION_ITEMS = [
   { title: "JOURNEY", link: "#journey" },
   { title: "WORK", link: "#work" },
   { title: "CONTACT", link: "#contact" },
-  { title: "TWIN", link: "#twin" },
+  // { title: "TWIN", link: "#twin" },
 ];

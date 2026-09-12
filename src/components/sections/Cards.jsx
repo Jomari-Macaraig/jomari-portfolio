@@ -1,4 +1,4 @@
-import Card from "../ui/Card";
+import HighlightCard from "../ui/HighlightCard";
 import SectionWrapper from "../ui/Section/SectionWrapper";
 
 import { SITE } from "../../data/site";
@@ -14,7 +14,7 @@ export default function Cards() {
   return (
     <SectionWrapper className="grid gird-cols-1 sm:grid-cols-2 lg:grid-cols-4">
       {SITE.highlights.map((highlight, index) => (
-        <Card
+        <HighlightCard
           key={`${highlight.title} - ${highlight.subtitle}`}
           title={highlight.title}
           subtitle={highlight.subtitle}

@@ -11,7 +11,7 @@ export default function Career() {
         <SectionHeader index={SITE.career.section[0]} label={SITE.career.section[1]} titles={SITE.career.title} />
         <Paragraph>{SITE.career.description}</Paragraph>
       </div>
-      <div className="flex flex-col gap-4 text-fg mt-5">
+      <div className="flex flex-col text-fg mt-5">
         {SITE.career.jobs.map((job, index) => (
           <Job
             className={`border-line border-t ${SITE.career.jobs.length - 1 == index ? "border-b" : ""}`}

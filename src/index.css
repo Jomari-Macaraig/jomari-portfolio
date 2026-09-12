@@ -28,6 +28,8 @@
   --tracking-xl: 0.22em;
 
   --animate-marquee: marquee 20s linear infinite;
+
+  --container-8xl: 120rem;
 }
 
 @keyframes marquee {

@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:justify-between gap-4 mt-10 pt-10 font-display border-t border-line">
         <div className="space-y-4">
           <h1 className="text-fg text-2xl sm:text-3xl md:text-4xl lg:text-5xl">{SITE.name}</h1>
-          <p className="text-xl font-sans font-light text-sm">{SITE.description}</p>
+          <p className="text-xl font-sans font-thin text-sm">{SITE.description}</p>
           <p className="font-mono font-light text-sm uppercase">CURRENTLY · {SITE.job}</p>
         </div>
         <div className="flex flex-col md:flex-row gap-4 flex-wrap justify-end items-center sm:self-end">

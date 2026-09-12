@@ -1,6 +1,6 @@
 import SectionWrapper from "../ui/Section/SectionWrapper";
 import SectionHeader from "../ui/Section/SectionHeader";
-import CapabilityCard from "../ui/CapabilityCard";
+import Card from "../ui/Card";
 import { SITE } from "../../data/site";
 
 const HIGHLIGHT_DIVIDERS = [
@@ -22,9 +22,9 @@ export default function Capabilities() {
           titles={SITE.capabilities.title}
         />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
         {SITE.capabilities.items.map((item, index) => (
-          <CapabilityCard
+          <Card
             key={item.index}
             index={item.index}
             title={item.title}

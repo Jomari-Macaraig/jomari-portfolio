@@ -5,6 +5,8 @@ import About from "../sections/About.jsx";
 import Capabilities from "../sections/Capabilities.jsx";
 import Career from "../sections/Career.jsx";
 import { SITE } from "../../data/site.js";
+import Contact from "../sections/Contact.jsx";
+import Project from "../sections/Project.jsx";
 
 export default function Main() {
   return (
@@ -15,6 +17,8 @@ export default function Main() {
       <About />
       <Capabilities />
       <Career />
+      <Project />
+      <Contact />
     </main>
   );
 }
