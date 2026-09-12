@@ -27,6 +27,8 @@ export const SITE = {
     "DynamoDB",
     "Cloudfront",
     "Route53",
+    "RDS",
+    "Codebuild",
   ],
   highlights: [
     { title: "11+", subtitle: "years in production" },
@@ -46,6 +48,54 @@ export const SITE = {
       "My foundation is in Python, Django, databases, cloud infrastructure, and distributed systems. Today, I bring that experience across the stack with React and TypeScript while exploring AI engineering and agentic development workflows.",
 
       "The stack can shift. The standard does not.",
+    ],
+  },
+  capabilities: {
+    section: ["02", "capabilities"],
+    title: ["The stack is a tool.", "Ownership is the point"],
+    items: [
+      {
+        id: "01",
+        title: "Product engineering",
+        description:
+          "End-to-end product development across interfaces, APIs, workflows, and infrastructure. The goal is not just working software, but software that solves the right problem.",
+        stacks: ["Full-stack development", "System design", "Technical ownership"],
+      },
+      {
+        id: "02",
+        title: "Application development",
+        description:
+          "Modern applications built with Python, Django, Flask, FastAPI, React, and TypeScript, with clear boundaries and code that remains understandable as the product evolves.",
+        stacks: ["Python", "Django", "FastAPI", "React", "TypeScript"],
+      },
+      {
+        id: "03",
+        title: "Business systems",
+        description:
+          "Complex workflows that connect products with real-world operations, including order processing, payments, logistics, reporting, and third-party integrations.",
+        stacks: ["Workflow automation", "Payments", "Logistics", "Integrations"],
+      },
+      {
+        id: "04",
+        title: "Cloud delivery",
+        description:
+          "AWS-based systems, containerized development, and automated delivery practices. Infrastructure designed to be observable, repeatable, and dependable.",
+        stacks: ["AWS", "Docker", "CI/CD", "Observability"],
+      },
+      {
+        id: "05",
+        title: "Data and performance",
+        description:
+          "Relational data modeling with PostgreSQL and MySQL, caching with Redis, and performance work across queries, APIs, and background processes.",
+        stacks: ["PostgreSQL", "MySQL", "Redis", "Performance optimization"],
+      },
+      {
+        id: "06",
+        title: "AI-enabled development",
+        description:
+          "Using AI-assisted workflows and context engineering to accelerate research, implementation, testing, and review while keeping engineering judgment at the center.",
+        stacks: ["Agentic workflows", "Context engineering", "AI-assisted development"],
+      },
     ],
   },
 };

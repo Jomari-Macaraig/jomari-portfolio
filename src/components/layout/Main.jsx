@@ -2,6 +2,7 @@ import Hero from "../sections/Hero";
 import Marquee from "../ui/Marquee";
 import Cards from "../sections/Cards.jsx";
 import About from "../sections/About.jsx";
+import Capabilities from "../sections/Capabilities.jsx";
 import { SITE } from "../../data/site.js";
 
 export default function Main() {
@@ -11,6 +12,7 @@ export default function Main() {
       <Marquee items={SITE.skills} />
       <Cards />
       <About />
+      <Capabilities />
     </main>
   );
 }

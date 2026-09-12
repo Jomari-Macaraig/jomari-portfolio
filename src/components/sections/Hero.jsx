@@ -2,13 +2,11 @@ import { SITE } from "../../data/site";
 import Email from "../ui/Email";
 import CTA from "../ui/CTA";
 import Link from "../ui/Link";
+import SectionWrapper from "../ui/Section/SectionWrapper";
 
 export default function Hero() {
   return (
-    <section
-      id="hero"
-      className="relative flex flex-col flex-1 justify-end z-10 pt-24 pb-12 px-6 sm:px-10 md:px-20 lg:px-40 text-muted"
-    >
+    <SectionWrapper id="hero" className="relative flex flex-col flex-1 justify-end z-10 text-muted">
       <div className="flex flex-col gap-4 lg:flex-row items-start lg:items-center lg:justify-between font-mono font-extralight text-xs lg:text-sm tracking-xl uppercase">
         <div>REMOTE · PYTHON · REACT · AWS · AI</div>
         <div className="text-accent tracking-widest">OPEN TO REMOTE · PART-TIME OR FULL-TIME</div>
@@ -33,6 +31,6 @@ export default function Hero() {
           />
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   );
 }
