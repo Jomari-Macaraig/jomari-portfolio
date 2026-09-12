@@ -1,6 +1,7 @@
 import { SITE } from "../../data/site";
 import SectionWrapper from "../ui/Section/SectionWrapper";
 import SectionHeader from "../ui/Section/SectionHeader";
+import Paragraph from "../ui/Paragraph";
 
 export default function About() {
   return (
@@ -13,9 +14,7 @@ export default function About() {
         <div>
           {SITE.about.description.map((item, index) => (
             <span key={`about-${index}`}>
-              <p key={index} className="text-muted font-sans font-light">
-                {item}
-              </p>
+              <Paragraph key={index}>{item}</Paragraph>
               <br />
             </span>
           ))}

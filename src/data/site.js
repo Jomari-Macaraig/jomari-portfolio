@@ -98,6 +98,59 @@ export const SITE = {
       },
     ],
   },
+  career: {
+    section: ["03", "Career Journey"],
+    title: ["From engineering foundations to end-to-end product ownership."],
+    description:
+      "Over more than a decade, I have worked across startups, consulting, data platforms, financial systems, and e-commerce operations. Each role expanded the problems I could own, from data pipelines and backend services to cloud infrastructure and full-stack products.",
+    jobs: [
+      {
+        company: "Filterbuy Inc.",
+        date: "February 2025 — May 2026",
+        jobTitle: "Full-Stack Software Engineer",
+        description:
+          "Built and improved systems supporting customer service, order management, packaging, and business operations.",
+        place: "UNITED STATES",
+        isCurrent: true,
+      },
+      {
+        company: "Freelance",
+        date: "January 2024 — September 2024",
+        jobTitle: "Software Engineer",
+        description:
+          "Designed scalable applications and APIs while helping engineering teams improve performance and delivery standards.",
+        place: "UNITED STATES",
+        isCurrent: false,
+      },
+      {
+        company: "Wizeline Inc.",
+        date: "December 2021 — October 2023",
+        jobTitle: "Software Engineer III",
+        description:
+          "Worked on modernizing financial data pipelines, improving matching reliability, query efficiency, and backend performance.",
+        place: "VIETNAM/INDIA",
+        isCurrent: false,
+      },
+      {
+        company: "Makatisoft Inc.",
+        date: "October 2018 — December 2021",
+        jobTitle: "Backend Engineer",
+        description:
+          "Developed cloud-based services, infrastructure automation, APIs, and systems supporting cryptocurrency and automated trading products.",
+        place: "PHILIPPINES",
+        isCurrent: false,
+      },
+      {
+        company: "Save22 Inc.",
+        date: "January 2015 — September 2018",
+        jobTitle: "Software Engineer → Senior Software Engineer",
+        description:
+          "Progressed from intern to Senior Software Engineer while helping build and scale a pricing intelligence platform.",
+        place: "PHILIPPINES",
+        isCurrent: false,
+      },
+    ],
+  },
 };
 
 export const NAVIGATION_ITEMS = [
