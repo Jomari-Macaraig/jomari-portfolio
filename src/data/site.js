@@ -164,7 +164,7 @@ export const SITE = {
     ],
   },
   projects: {
-    section: ["05", "Things I've built"],
+    section: ["04", "Things I've built"],
     title: ["Personal projects where I explore ideas, solve practical problems, and build across the stack."],
     description:
       "Much of the work I have built for companies is confidential or proprietary, so this space focuses on personal projects where I can openly share the process, technical decisions, and results.",
