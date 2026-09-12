@@ -28,6 +28,12 @@ export const SITE = {
     "Cloudfront",
     "Route53",
   ],
+  highlights: [
+    { title: "11+", subtitle: "years in production" },
+    { title: "05", subtitle: "countries shipped" },
+    { title: "FS", subtitle: "end-to-end-development" },
+    { title: "PT/FT", subtitle: "open to remote" },
+  ],
 };
 
 export const NAVIGATION_ITEMS = [
