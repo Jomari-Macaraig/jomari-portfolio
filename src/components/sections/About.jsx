@@ -12,12 +12,12 @@ export default function About() {
         </div>
         <div>
           {SITE.about.description.map((item, index) => (
-            <>
+            <span key={`about-${index}`}>
               <p key={index} className="text-muted font-sans font-light">
                 {item}
               </p>
               <br />
-            </>
+            </span>
           ))}
         </div>
       </div>
