@@ -1,5 +1,6 @@
 import Header from "./components/layout/Header";
 import Main from "./components/layout/Main";
+import Footer from "./components/layout/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <div className="flex min-h-dvh flex-col max-w-8xl mx-auto">
         <Header />
         <Main />
+        <Footer />
       </div>
     </>
   );

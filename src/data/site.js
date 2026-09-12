@@ -1,6 +1,8 @@
 export const SITE = {
   name: "Jomari Macaraig",
   email: "macaraig.jomari10@gmail.com",
+  address: "Metro Manila, Philippines",
+  credits: "© 2026 - Built to last",
   mailto: "mailto:macaraig.jomari10@gmail.com",
   description:
     "Software engineer with over a decade of experience building reliable digital products and solving complex business problems.",
