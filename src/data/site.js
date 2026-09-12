@@ -105,13 +105,22 @@ export const SITE = {
       "Over more than a decade, I have worked across startups, consulting, data platforms, financial systems, and e-commerce operations. Each role expanded the problems I could own, from data pipelines and backend services to cloud infrastructure and full-stack products.",
     jobs: [
       {
+        company: "Lemon.io",
+        date: "August 2026 — Present",
+        jobTitle: "Backend Developer Talent",
+        description:
+          "Accepted into Lemon.io’s vetted talent pool for remote backend development opportunities with startups and international clients.",
+        place: "UNITED STATES",
+        isCurrent: true,
+      },
+      {
         company: "Filterbuy Inc.",
         date: "February 2025 — May 2026",
         jobTitle: "Full-Stack Software Engineer",
         description:
           "Built and improved systems supporting customer service, order management, packaging, and business operations.",
         place: "UNITED STATES",
-        isCurrent: true,
+        isCurrent: false,
       },
       {
         company: "Freelance",
