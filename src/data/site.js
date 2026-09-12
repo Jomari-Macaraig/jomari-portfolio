@@ -32,8 +32,22 @@ export const SITE = {
     { title: "11+", subtitle: "years in production" },
     { title: "05", subtitle: "countries shipped" },
     { title: "FS", subtitle: "end-to-end-development" },
-    { title: "PT/FT", subtitle: "open to remote" },
+    { title: "PT / FT", subtitle: "open to remote" },
   ],
+  about: {
+    section: ["01", "about"],
+    title: ["Systems-minded.", "Business-aware."],
+    highlight: "Own the problem. Build with purpose. Ship work that customers and teams can depend on.",
+    description: [
+      "I build software around real business problems, from customer-facing experiences to the systems, APIs, and data workflows behind them. My work has supported e-commerce, financial data, automotive marketing, cryptocurrency, manufacturing, and logistics.",
+
+      "I take ownership beyond the code: understanding the problem, weighing tradeoffs, collaborating with stakeholders, and delivering solutions that remain reliable after launch. The goal is not simply to make something work, but to make it useful, durable, and maintainable.",
+
+      "My foundation is in Python, Django, databases, cloud infrastructure, and distributed systems. Today, I bring that experience across the stack with React and TypeScript while exploring AI engineering and agentic development workflows.",
+
+      "The stack can shift. The standard does not.",
+    ],
+  },
 };
 
 export const NAVIGATION_ITEMS = [
