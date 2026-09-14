@@ -1,8 +1,8 @@
-import SectionHeader from "../ui/Section/SectionHeader";
-import SectionWrapper from "../ui/Section/SectionWrapper";
-import Paragraph from "../ui/Paragraph";
-import Job from "../ui/Job";
-import { SITE } from "../../data/site";
+import SectionHeader from "../ui/Section/SectionHeader.jsx";
+import SectionWrapper from "../ui/Section/SectionWrapper.jsx";
+import Paragraph from "../ui/Paragraph/Paragraph.jsx";
+import Job from "../ui/Job.jsx";
+import { SITE } from "../../data/site.js";
 
 export default function Career() {
   return (

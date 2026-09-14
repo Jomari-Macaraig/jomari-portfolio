@@ -1,7 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
-import SectionWrapper from "../ui/Section/SectionWrapper";
-import SectionHeader from "../ui/Section/SectionHeader";
-import { SITE } from "../../data/site";
+import SectionWrapper from "../ui/Section/SectionWrapper.jsx";
+import SectionHeader from "../ui/Section/SectionHeader.jsx";
+import { SITE } from "../../data/site.js";
 
 export default function Contact() {
   return (

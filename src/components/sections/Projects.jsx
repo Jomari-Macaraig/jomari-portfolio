@@ -1,10 +1,10 @@
-import SectionWrapper from "../ui/Section/SectionWrapper";
-import SectionHeader from "../ui/Section/SectionHeader";
-import Card from "../ui/Card";
-import Paragraph from "../ui/Paragraph";
-import { SITE } from "../../data/site";
+import SectionWrapper from "../ui/Section/SectionWrapper.jsx";
+import SectionHeader from "../ui/Section/SectionHeader.jsx";
+import Card from "../ui/Card/Card.jsx";
+import Paragraph from "../ui/Paragraph/Paragraph.jsx";
+import { SITE } from "../../data/site.js";
 
-export default function Project() {
+export default function Projects() {
   return (
     <SectionWrapper id="work" className="flex flex-col gap-7">
       <SectionHeader index={SITE.projects.section[0]} label={SITE.projects.section[1]} titles={SITE.projects.title} />

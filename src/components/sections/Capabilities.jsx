@@ -1,7 +1,7 @@
-import SectionWrapper from "../ui/Section/SectionWrapper";
-import SectionHeader from "../ui/Section/SectionHeader";
-import Card from "../ui/Card";
-import { SITE } from "../../data/site";
+import SectionWrapper from "../ui/Section/SectionWrapper.jsx";
+import SectionHeader from "../ui/Section/SectionHeader.jsx";
+import Card from "../ui/Card/Card.jsx";
+import { SITE } from "../../data/site.js";
 
 const HIGHLIGHT_DIVIDERS = [
   "border-b sm:border-r ",

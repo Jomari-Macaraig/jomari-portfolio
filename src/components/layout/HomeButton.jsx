@@ -1,4 +1,4 @@
-import Logo from "./ui/Logo";
+import Logo from "../ui/Logo.jsx";
 export default function HomeButton() {
   return (
     <a href="#hero" className="group flex items-center gap-3">

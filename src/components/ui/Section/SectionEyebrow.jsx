@@ -1,4 +1,4 @@
-import ParagraphAccent from "../ParagraphAccent";
+import ParagraphAccent from "../Paragraph/ParagraphAccent";
 
 export default function SectionEyebrow({ index, label }) {
   return (

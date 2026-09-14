@@ -1,7 +1,7 @@
-import HighlightCard from "../ui/HighlightCard";
-import SectionWrapper from "../ui/Section/SectionWrapper";
+import HighlightCard from "../ui/Card/HighlightCard.jsx";
+import SectionWrapper from "../ui/Section/SectionWrapper.jsx";
 
-import { SITE } from "../../data/site";
+import { SITE } from "../../data/site.js";
 
 const HIGHLIGHT_DIVIDERS = [
   "border-b sm:border-r lg:border-b-0",
@@ -10,7 +10,7 @@ const HIGHLIGHT_DIVIDERS = [
   "",
 ];
 
-export default function Cards() {
+export default function Highlights() {
   return (
     <SectionWrapper className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
       {SITE.highlights.map((highlight, index) => (

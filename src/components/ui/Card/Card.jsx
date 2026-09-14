@@ -1,5 +1,5 @@
 import { siGithub } from "simple-icons";
-import Paragraph from "./Paragraph";
+import Paragraph from "../Paragraph/Paragraph";
 
 export default function Card({ index, title, description, stacks, github = "", className = "" }) {
   return (

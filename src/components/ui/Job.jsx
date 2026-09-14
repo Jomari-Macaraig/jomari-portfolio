@@ -1,5 +1,5 @@
-import Paragraph from "./Paragraph";
-import ParagraphAccent from "./ParagraphAccent";
+import Paragraph from "./Paragraph/Paragraph";
+import ParagraphAccent from "./Paragraph/ParagraphAccent";
 
 export default function Job({ date, company, jobTitle, description, place, isCurrent, className = "" }) {
   return (

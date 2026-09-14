@@ -1,4 +1,4 @@
-import { SITE } from "../../data/site";
+import { SITE } from "../../data/site.js";
 
 export default function Email({ title, className = "" }) {
   return (
