@@ -1,5 +1,3 @@
-import { motion } from "motion/react";
-
 import { SITE } from "../../data/site.js";
 import StaggerGroup from "../ui/motion/StaggerGroup.jsx";
 import StaggerItem from "../ui/motion/StaggerItem.jsx";
@@ -21,9 +19,9 @@ export default function About() {
         </StaggerItem>
 
         <StaggerItem className="flex flex-col gap-5 flex-2">
-          <motion.div className="font-sans font-light tracking-wide text-2xl sm:text-3xl px-5 py-3 border-l-2 border-accent">
+          <div className="font-sans font-light tracking-wide text-2xl sm:text-3xl px-5 py-3 border-l-2 border-accent">
             {SITE.about.highlight}
-          </motion.div>
+          </div>
           <StaggerGroup stagger={0.4}>
             {SITE.about.description.map((item, index) => (
               <StaggerItem key={`about-${index}`}>

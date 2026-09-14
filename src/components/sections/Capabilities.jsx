@@ -1,5 +1,8 @@
 import { SITE } from "../../data/site.js";
 import Card from "../ui/Card/Card.jsx";
+import StaggerGroup from "../ui/motion/StaggerGroup.jsx";
+import StaggerItem from "../ui/motion/StaggerItem.jsx";
+import { fadeRight } from "../ui/motion/variants.js";
 import SectionHeader from "../ui/Section/SectionHeader.jsx";
 import SectionWrapper from "../ui/Section/SectionWrapper.jsx";
 
@@ -14,26 +17,32 @@ const HIGHLIGHT_DIVIDERS = [
 
 export default function Capabilities() {
   return (
-    <SectionWrapper className="flex flex-col gap-4 text-fg">
-      <div>
-        <SectionHeader
-          index={SITE.capabilities.section[0]}
-          label={SITE.capabilities.section[1]}
-          titles={SITE.capabilities.title}
-        />
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
-        {SITE.capabilities.items.map((item, index) => (
-          <Card
-            key={item.index}
-            index={item.index}
-            title={item.title}
-            description={item.description}
-            stacks={item.stacks}
-            className={`border-line ${HIGHLIGHT_DIVIDERS[index]}`}
+    <StaggerGroup>
+      <SectionWrapper className="flex flex-col gap-4 text-fg">
+        <StaggerItem>
+          <SectionHeader
+            index={SITE.capabilities.section[0]}
+            label={SITE.capabilities.section[1]}
+            titles={SITE.capabilities.title}
           />
-        ))}
-      </div>
-    </SectionWrapper>
+        </StaggerItem>
+        <StaggerItem variants={fadeRight()}>
+          <StaggerGroup className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+            {SITE.capabilities.items.map((item, index) => (
+              <StaggerItem key={item.index} variants={fadeRight()}>
+                <Card
+                  key={item.index}
+                  index={item.index}
+                  title={item.title}
+                  description={item.description}
+                  stacks={item.stacks}
+                  className={`border-line ${HIGHLIGHT_DIVIDERS[index]}`}
+                />
+              </StaggerItem>
+            ))}
+          </StaggerGroup>
+        </StaggerItem>
+      </SectionWrapper>
+    </StaggerGroup>
   );
 }

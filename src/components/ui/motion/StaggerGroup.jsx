@@ -2,15 +2,15 @@ import { motion } from "motion/react";
 
 import { staggerContainer } from "./variants.js";
 
-export default function StaggerGroup({ stagger = 0.3, className = "", children, ...rest }) {
+export default function StaggerGroup({ stagger = 0.3, once = true, amount = 0.5, className = "", children, ...props }) {
   return (
     <motion.div
       variants={staggerContainer(stagger)}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once, amount }}
       className={className}
-      {...rest}
+      {...props}
     >
       {children}
     </motion.div>
