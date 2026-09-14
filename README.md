@@ -1,19 +1,70 @@
-# React + Vite
+# Jomari Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio site for Jomari Macaraig — software engineer. Built from scratch as a hands-on way to learn React and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Tech stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **[React 19](https://react.dev/)** — UI, function components only
+- **[Vite](https://vite.dev/)** — dev server and build tooling
+- **[Tailwind CSS v4](https://tailwindcss.com/)** — styling, configured entirely in CSS (`src/index.css`, no `tailwind.config.js`)
+- **[lucide-react](https://lucide.dev/)** / **[simple-icons](https://simpleicons.org/)** — outline icons and brand logos, respectively
+- **[Firebase Hosting](https://firebase.google.com/docs/hosting)** — deployment
 
-## React Compiler
+## Sections
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+The page (`src/App.jsx` → `src/components/layout/Main.jsx`) renders top to bottom as:
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+| Section | File | Content |
+|---|---|---|
+| Hero | `sections/Hero.jsx` | Intro, availability status, name, CTAs |
+| Skills marquee | `ui/Marquee.jsx` | Auto-scrolling strip of technologies |
+| Highlights | `sections/Cards.jsx` | Quick stat tiles (years of experience, etc.) |
+| About | `sections/About.jsx` | Background and approach |
+| Capabilities | `sections/Capabilities.jsx` | Areas of focus, one card per capability |
+| Career / Journey | `sections/Career.jsx` | Work history timeline |
+| Projects / Work | `sections/Project.jsx` | Personal projects, linked to GitHub where public |
+| Contact | `sections/Contact.jsx` | Direct email link |
 
-## Expanding the ESLint configuration
+Shared building blocks live in `src/components/ui/` (`Card`, `HighlightCard`, `Job`, `Paragraph`, the `Section*` family for the eyebrow/title/wrapper pattern used across every section) and `src/data/site.js` (all site copy/content in one place, imported wherever it's needed).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting started
+
+```bash
+npm install
+npm run dev
+```
+
+The dev server binds to `0.0.0.0` by default, so it's reachable from another device on the same network (useful for testing on a phone) — the terminal output prints both the local and network URLs.
+
+## Scripts
+
+| Command | Does |
+|---|---|
+| `npm run dev` | Start the Vite dev server |
+| `npm run build` | Production build, output to `dist/` |
+| `npm run preview` | Serve the production build locally |
+| `npm run lint` | Run ESLint |
+| `npm run deploy` | Deploy `dist/` to Firebase Hosting |
+
+## Deployment
+
+Hosting is configured in `firebase.json`/`.firebaserc` as a plain static SPA (no framework auto-detection — see those files for why). To ship a new version:
+
+```bash
+npm run build
+npm run deploy
+```
+
+## Project structure
+
+```
+src/
+├── components/
+│   ├── layout/        # Header, Footer, Main
+│   ├── sections/       # One file per page section
+│   └── ui/             # Reusable pieces (Card, Paragraph, Section*, icons, etc.)
+├── data/
+│   └── site.js         # All site copy and content
+├── index.css            # Tailwind import + @theme design tokens + hand-written CSS
+└── main.jsx
+```

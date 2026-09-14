@@ -39,5 +39,4 @@ lerna-debug.log*
 # firebase
 .firebase/
 
-# generated learning notes (from /tailwind-lesson) — not part of the site
-/docs/lessons/
+/docs/*
