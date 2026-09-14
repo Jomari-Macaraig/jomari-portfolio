@@ -12,7 +12,7 @@ const HIGHLIGHT_DIVIDERS = [
 
 export default function Cards() {
   return (
-    <SectionWrapper className="grid gird-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+    <SectionWrapper className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
       {SITE.highlights.map((highlight, index) => (
         <HighlightCard
           key={`${highlight.title} - ${highlight.subtitle}`}

@@ -12,7 +12,7 @@
 
 @theme {
   --color-bg: #070708;
-  --color-bg-elevetad: #101012;
+  --color-bg-elevated: #101012;
   --color-bg-soft: #16161a;
   --color-fg: #f3f0e8;
   --color-muted: #9a9588;
@@ -37,7 +37,7 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-30%);
+    transform: translateX(-50%);
   }
 }
 

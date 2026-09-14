@@ -1,11 +1,13 @@
 export default function SectionTitle({ titles }) {
   return (
     <div className="max-w-4xl">
-      {titles.map((item, index) => (
-        <h2 key={index} className="text-fg font-display text-4xl sm:text-5xl tracking-wide ">
-          {item}
-        </h2>
-      ))}
+      <h2 className="text-fg font-display text-4xl sm:text-5xl tracking-wide ">
+        {titles.map((item, index) => (
+          <span key={index} className="block">
+            {item}
+          </span>
+        ))}
+      </h2>
     </div>
   );
 }
