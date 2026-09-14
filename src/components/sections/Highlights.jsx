@@ -20,7 +20,7 @@ const container = {
 
 const cards = {
   hidden: { opacity: 0, x: -20 },
-  visible: { opacity: 1, x: 0, transition: { ease: "easeOut", duration: 1 } },
+  visible: { opacity: 1, x: 0, transition: { ease: "easeOut", duration: 0.5 } },
 };
 
 export default function Highlights() {
@@ -31,7 +31,6 @@ export default function Highlights() {
         variants={container}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
       >
         {SITE.highlights.map((highlight, index) => (
           <motion.div key={`${highlight.title} - ${highlight.subtitle} animation`} variants={cards}>
