@@ -8,6 +8,8 @@
   --bg: #070708;
   --line: rgba(243, 240, 232, 0.1);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --header-h: 88px; /* update if the header's actual height changes */
 }
 
 @theme {

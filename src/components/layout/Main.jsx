@@ -10,7 +10,7 @@ import Marquee from "../ui/Marquee.jsx";
 
 export default function Main() {
   return (
-    <main className="flex min-h-dvh flex-col flex-1">
+    <main className="flex flex-col">
       <Hero />
       <Marquee items={SITE.skills} />
       <Highlights />
