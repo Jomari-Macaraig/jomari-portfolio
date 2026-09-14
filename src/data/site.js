@@ -32,6 +32,7 @@ export const SITE = {
     "Route53",
     "RDS",
     "Codebuild",
+    "Firebase",
   ],
   highlights: [
     { title: "11+", subtitle: "years in production" },
@@ -174,13 +175,13 @@ export const SITE = {
         title: "Personal Website",
         description:
           "A personal website designed and built to showcase my experience, capabilities, and projects while reflecting how I approach product development across the stack.",
-        stacks: ["React", "TailwindCSS", "Framer Motion"],
+        stacks: ["React", "TailwindCSS", "Framer Motion", "Firebase"],
         github: "https://github.com/Jomari-Macaraig/jomari-portfolio",
       },
       {
         index: "02",
-        title: "Coming Soon...",
-        description: "",
+        title: "Recall",
+        description: "Coming Soon...",
         stacks: [],
         github: "",
       },
