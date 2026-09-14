@@ -1,7 +1,7 @@
-import { motion } from "motion/react";
-
 import { SITE } from "../../data/site.js";
 import HighlightCard from "../ui/Card/HighlightCard.jsx";
+import StaggerGroup from "../ui/motion/StaggerGroup.jsx";
+import StaggerItem from "../ui/motion/StaggerItem.jsx";
 import SectionWrapper from "../ui/Section/SectionWrapper.jsx";
 
 const HIGHLIGHT_DIVIDERS = [
@@ -11,39 +11,21 @@ const HIGHLIGHT_DIVIDERS = [
   "",
 ];
 
-const container = {
-  hidden: {},
-  visible: {
-    transition: { staggerChildren: 0.2 },
-  },
-};
-
-const cards = {
-  hidden: { opacity: 0, x: -20 },
-  visible: { opacity: 1, x: 0, transition: { ease: "easeOut", duration: 0.5 } },
-};
-
 export default function Highlights() {
   return (
-    <motion.div variants={container} initial="hidden" whileInView="visible">
-      <SectionWrapper
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
-        variants={container}
-        initial="hidden"
-        whileInView="visible"
-      >
+    <StaggerGroup>
+      <SectionWrapper className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
         {SITE.highlights.map((highlight, index) => (
-          <motion.div key={`${highlight.title} - ${highlight.subtitle} animation`} variants={cards}>
+          <StaggerItem key={`${highlight.title} - ${highlight.subtitle} animation`}>
             <HighlightCard
               key={`${highlight.title} - ${highlight.subtitle}`}
               title={highlight.title}
               subtitle={highlight.subtitle}
               className={`w-full md:w-auto border-line ${HIGHLIGHT_DIVIDERS[index]}`}
-              variants={cards}
             />
-          </motion.div>
+          </StaggerItem>
         ))}
       </SectionWrapper>
-    </motion.div>
+    </StaggerGroup>
   );
 }

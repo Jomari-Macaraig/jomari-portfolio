@@ -1,54 +1,39 @@
 import { motion } from "motion/react";
 
 import { SITE } from "../../data/site.js";
+import StaggerGroup from "../ui/motion/StaggerGroup.jsx";
+import StaggerItem from "../ui/motion/StaggerItem.jsx";
 import Paragraph from "../ui/Paragraph/Paragraph.jsx";
 import SectionHeader from "../ui/Section/SectionHeader.jsx";
 import SectionWrapper from "../ui/Section/SectionWrapper.jsx";
 
-const container = {
-  hidden: {},
-  visible: {
-    transition: { staggerChildren: 0.2 },
-  },
-};
-
-const child = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { ease: "easeOut", duration: 0.2 } },
-};
-
-const paragraph = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { ease: "easeIn", duration: 0.2 } },
-};
-
 export default function About() {
   return (
-    <motion.div variants={container} initial="hidden" whileInView="visible">
+    <StaggerGroup>
       <SectionWrapper id="about" className="flex flex-col lg:flex-row gap-15 text-fg">
-        <motion.div variants={child}>
+        <StaggerItem>
           <SectionHeader
             index={SITE.about.section[0]}
             label={SITE.about.section[1]}
             titles={SITE.about.title}
             className="flex-1"
           />
-        </motion.div>
+        </StaggerItem>
 
-        <motion.div className="flex flex-col gap-5 flex-2" variants={child}>
+        <StaggerItem className="flex flex-col gap-5 flex-2">
           <motion.div className="font-sans font-light tracking-wide text-2xl sm:text-3xl px-5 py-3 border-l-2 border-accent">
             {SITE.about.highlight}
           </motion.div>
-          <motion.div variants={container}>
+          <StaggerGroup stagger={0.4}>
             {SITE.about.description.map((item, index) => (
-              <motion.span key={`about-${index}`} variants={paragraph}>
+              <StaggerItem key={`about-${index}`}>
                 <Paragraph key={index}>{item}</Paragraph>
                 <br />
-              </motion.span>
+              </StaggerItem>
             ))}
-          </motion.div>
-        </motion.div>
+          </StaggerGroup>
+        </StaggerItem>
       </SectionWrapper>
-    </motion.div>
+    </StaggerGroup>
   );
 }
