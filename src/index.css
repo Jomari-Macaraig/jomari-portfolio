@@ -29,19 +29,9 @@
 
   --tracking-xl: 0.22em;
 
-  --animate-marquee: marquee 20s linear infinite;
-
   --container-8xl: 120rem;
 }
 
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
 
 @utility stroke-title {
   color: color-mix(in srgb, var(--color-fg) 12%, transparent);
