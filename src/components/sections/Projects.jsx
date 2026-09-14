@@ -24,7 +24,7 @@ export default function Projects() {
                   description={item.description}
                   stacks={item.stacks}
                   github={item.github}
-                  className="border-line border h-full w-full"
+                  className="border-line border"
                 />
               </StaggerItem>
             ))}
