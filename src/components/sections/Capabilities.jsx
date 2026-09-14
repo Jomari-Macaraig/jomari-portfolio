@@ -17,7 +17,7 @@ const HIGHLIGHT_DIVIDERS = [
 
 export default function Capabilities() {
   return (
-    <StaggerGroup>
+    <StaggerGroup amount={0.2}>
       <SectionWrapper className="flex flex-col gap-4 text-fg">
         <StaggerItem>
           <SectionHeader

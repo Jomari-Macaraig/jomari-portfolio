@@ -7,7 +7,7 @@ import SectionWrapper from "../ui/Section/SectionWrapper.jsx";
 
 export default function About() {
   return (
-    <StaggerGroup>
+    <StaggerGroup amount={0.2}>
       <SectionWrapper id="about" className="flex flex-col lg:flex-row gap-15 text-fg">
         <StaggerItem>
           <SectionHeader
