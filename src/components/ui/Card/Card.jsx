@@ -4,7 +4,7 @@ import Paragraph from "../Paragraph/Paragraph";
 
 export default function Card({ index, title, description, stacks, github = "", className = "" }) {
   return (
-    <div className={`flex flex-col gap-4 text-fg p-5 bg-bg hover:bg-bg-elevated focus-visible::bg-bg-elevated ${className}`}>
+    <div className={`flex flex-col gap-4 text-fg p-5 hover:bg-bg-elevated focus-visible:bg-bg-elevated ${className}`}>
       <div className="flex justify-between text-accent">
         <div className="font-light font-mono text-xs">{index}</div>
         {github && (

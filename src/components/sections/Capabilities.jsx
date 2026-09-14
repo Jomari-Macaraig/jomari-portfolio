@@ -17,7 +17,7 @@ const HIGHLIGHT_DIVIDERS = [
 
 export default function Capabilities() {
   return (
-    <StaggerGroup amount={0.2}>
+    <StaggerGroup>
       <SectionWrapper className="flex flex-col gap-4 text-fg">
         <StaggerItem>
           <SectionHeader
@@ -27,7 +27,7 @@ export default function Capabilities() {
           />
         </StaggerItem>
         <StaggerItem variants={fadeRight()}>
-          <StaggerGroup className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          <StaggerGroup className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" >
             {SITE.capabilities.items.map((item, index) => (
               <StaggerItem key={item.index} variants={fadeRight()}>
                 <Card
