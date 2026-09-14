@@ -1,5 +1,5 @@
-import SectionTitle from "./SectionTitle";
 import SectionEyebrow from "./SectionEyebrow";
+import SectionTitle from "./SectionTitle";
 export default function SectionHeader({ index, label, titles, className = "" }) {
   return (
     <div className={`flex flex-col gap-5 ${className}`}>

@@ -1,6 +1,6 @@
 import { SITE } from "../../data/site.js";
-import Email from "../ui/Email.jsx";
 import CTA from "../ui/CTA.jsx";
+import Email from "../ui/Email.jsx";
 import Link from "../ui/Link.jsx";
 import SectionWrapper from "../ui/Section/SectionWrapper.jsx";
 

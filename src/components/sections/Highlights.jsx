@@ -1,7 +1,6 @@
+import { SITE } from "../../data/site.js";
 import HighlightCard from "../ui/Card/HighlightCard.jsx";
 import SectionWrapper from "../ui/Section/SectionWrapper.jsx";
-
-import { SITE } from "../../data/site.js";
 
 const HIGHLIGHT_DIVIDERS = [
   "border-b sm:border-r lg:border-b-0",

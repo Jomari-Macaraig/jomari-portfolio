@@ -1,12 +1,12 @@
-import Hero from "../sections/Hero.jsx";
-import Marquee from "../ui/Marquee.jsx";
-import Highlights from "../sections/Highlights.jsx";
+import { SITE } from "../../data/site.js";
 import About from "../sections/About.jsx";
 import Capabilities from "../sections/Capabilities.jsx";
 import Career from "../sections/Career.jsx";
-import { SITE } from "../../data/site.js";
 import Contact from "../sections/Contact.jsx";
+import Hero from "../sections/Hero.jsx";
+import Highlights from "../sections/Highlights.jsx";
 import Projects from "../sections/Projects.jsx";
+import Marquee from "../ui/Marquee.jsx";
 
 export default function Main() {
   return (

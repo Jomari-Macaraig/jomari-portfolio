@@ -1,5 +1,5 @@
-import NavigationItem from "./NavigationItem.jsx";
 import { NAVIGATION_ITEMS } from "../../data/site.js";
+import NavigationItem from "./NavigationItem.jsx";
 
 export default function Navigation() {
   return (

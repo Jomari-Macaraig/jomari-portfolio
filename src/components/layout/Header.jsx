@@ -1,6 +1,6 @@
-import Navigation from "./Navigation.jsx";
 import Email from "../ui/Email.jsx";
 import HomeButton from "./HomeButton.jsx";
+import Navigation from "./Navigation.jsx";
 
 export default function Header() {
   return (

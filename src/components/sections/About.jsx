@@ -1,7 +1,7 @@
 import { SITE } from "../../data/site.js";
-import SectionWrapper from "../ui/Section/SectionWrapper.jsx";
-import SectionHeader from "../ui/Section/SectionHeader.jsx";
 import Paragraph from "../ui/Paragraph/Paragraph.jsx";
+import SectionHeader from "../ui/Section/SectionHeader.jsx";
+import SectionWrapper from "../ui/Section/SectionWrapper.jsx";
 
 export default function About() {
   return (
